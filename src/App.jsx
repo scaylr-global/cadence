@@ -473,7 +473,7 @@ export default function App() {
         </aside>
 
         <main className="lg:h-[calc(100vh-61px)] lg:overflow-hidden">
-          {selected ? <Decision lead={selected} onAction={act} /> : (
+          {selected ? <Decision key={selected.id} lead={selected} onAction={act} /> : (
             <div className="grid h-full place-items-center text-neutral-400">Select a lead</div>
           )}
         </main>
